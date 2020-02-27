@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+* {
+	font-weight: bold;
+	font-family: arial;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.images {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 200px;
+}
+
+.rotulos {
+	color: #A52A2A;
+}
+
+.botoes {
+	background-color: #D2691E;
+	color: #FFFFFF;
+	border: 1px outset;
+}
+
+.edit {
+	border: 1px inset;
+	background-color: #D3D3D3;
+	color: #000000;
+}

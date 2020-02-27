@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Contato</title>
+	<link rel="StyleSheet" type="text/css" href="css/style.css"
+		media="screen" />
+</h:head>
+<h:body>
+
+	<h:graphicImage value="images/logo.png" styleClass="images" />
+	<h:form>
+		<h:panelGrid columns="2">
+
+			<h:outputLabel value="Nome:" styleClass="rotulos" />
+			<h:inputText value="#{contatoController.nome}" styleClass="edit" />
+			<h:outputLabel value="E-mail:" styleClass="rotulos" />
+			<h:inputText value="#{contatoController.email}" styleClass="edit" />
+			<h:outputLabel value="Mensagem:" styleClass="rotulos" />
+			<h:inputTextarea value="#{contatoController.mensagem}" cols="30"
+				rows="5" styleClass="edit" />
+			<h:outputLabel value="" />
+			<h:commandButton value="Enviar sua mensagem!"
+				action="#{contatoController.entrar}" styleClass="botoes" />
+
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
